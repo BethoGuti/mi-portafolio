@@ -42,8 +42,8 @@ export const Nav = ({ focus }) => {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <img
-              className="h-8 w-auto"
-              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              className="h-16 w-auto"
+              src="/logo.svg"
               alt=""
             />
           </a>
@@ -63,13 +63,13 @@ export const Nav = ({ focus }) => {
             <a
               key={item.name}
               href={item.href}
-              className={`text-lg font-semibold leading-6 text-white hover:scale-125 ${
+              className={`text-lg font-semibold leading-6 text-gray-400 hover:scale-125 ${
                 focus[item.name]
-                  ? "transition ease-in-out delay-0 font-bold scale-125 duration-150"
-                  : "transition ease-in-out delay-0 text-white font-normal stroke-none scale-100 duration-300"
+                  ? "transition ease-in-out delay-0 text-slate-100 font-bold scale-125 duration-150"
+                  : "transition ease-in-out delay-0 text-gray-400 font-normal stroke-none scale-100 duration-300"
               }`}
             >
-              {item.text}
+              &lt; {item.text} /&gt;
             </a>
           ))}
         </div>

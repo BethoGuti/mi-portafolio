@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useState } from "react";
 import { AboutMe } from "./components/AboutMe";
 import { Header } from "./components/Header";
 import { Nav } from "./components/Nav";

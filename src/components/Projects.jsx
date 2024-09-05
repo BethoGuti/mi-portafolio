@@ -13,7 +13,7 @@ export const Projects = ( {setFocus} ) => {
   }, [isVisible]);
   return (
     <div className="min-h-screen" ref={elementRef}>
-      Projects
+      
     </div>
   );
 };
