@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
+import { motion } from "framer-motion";
 
 export const AboutMe = ({ setFocus }) => {
   const [elementRef, isVisible] = useIntersectionObserver({
@@ -17,7 +18,18 @@ export const AboutMe = ({ setFocus }) => {
       ref={elementRef}
       className="min-h-screen flex justify-center flex-wrap content-center"
     >
-      <div className="bg-gray-500 w-11/12 lg:w-10/12 m-auto p-5 sm:p-10 mt-5 rounded-xl flex flex-col lg:flex-row text-center lg:text-left sm:min-h-96">
+      <motion.div
+        className="bg-gray-500 w-11/12 lg:w-10/12 m-auto p-5 sm:p-10 mt-5 rounded-xl flex flex-col lg:flex-row text-center lg:text-left sm:min-h-96"
+        initial={{ scale: 0 }}
+        whileInView={{
+            rotate: 360,
+            scale: 1,
+            type: "spring",
+          stiffness: 260,
+          damping: 20,
+        }}
+        viewport={{ once: true }}
+      >
         <div className="flex-1 m-auto text-center">
           <img src="/logo192.png" className="inline-block m-auto text-center" />
         </div>
@@ -34,7 +46,7 @@ export const AboutMe = ({ setFocus }) => {
             digitales de alta calidad.
           </p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
