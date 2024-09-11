@@ -3,6 +3,10 @@ import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 import { motion } from "framer-motion";
 import { Button, Carousel } from "flowbite-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const Projects = ({ setFocus }) => {
   const [elementRef, isVisible] = useIntersectionObserver({
@@ -34,7 +38,18 @@ export const Projects = ({ setFocus }) => {
         }}
         viewport={{ once: true }}
       >
-        <Carousel>
+        <Carousel
+          leftControl={
+            <button className="m-0 h-12 w-12 rounded-full bg-gray-400 opacity-30 ">
+              <FontAwesomeIcon icon={faChevronLeft} className="text-black font-bold" />
+            </button>
+          }
+          rightControl={
+            <button className="m-0 h-12 w-12 rounded-full bg-gray-400 opacity-30 ">
+              <FontAwesomeIcon icon={faChevronRight} className="text-black font-bold" />
+            </button>
+          }
+        >
           <div className="w-full h-full">
             <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 h-full px-3">
               <img
@@ -54,8 +69,14 @@ export const Projects = ({ setFocus }) => {
                   <h6 className="text-mb font-bold my-2">Tecnologías:</h6>
                   <div className="flex flex-row mt-1 content-center">
                     <img src="/next-dot-js-svgrepo-com.svg" className="w-11" />
-                    <img src="/postgresql-svgrepo-com.svg" className="w-11 ms-2" />
-                    <img src="/tailwind-svgrepo-com.svg" className="w-16 ms-2" />
+                    <img
+                      src="/postgresql-svgrepo-com.svg"
+                      className="w-11 ms-2"
+                    />
+                    <img
+                      src="/tailwind-svgrepo-com.svg"
+                      className="w-16 ms-2"
+                    />
                   </div>
                 </div>
                 <button className="m-auto">
