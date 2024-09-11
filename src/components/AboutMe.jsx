@@ -19,7 +19,7 @@ export const AboutMe = ({ setFocus }) => {
       className="min-h-screen flex justify-center flex-wrap content-center"
     >
       <motion.div
-        className="bg-white w-11/12 lg:w-10/12 m-auto p-5 sm:p-10 mt-5 rounded-xl flex flex-col lg:flex-row text-center lg:text-left min-h-[520px]"
+        className="bg-white w-11/12 lg:w-10/12 m-auto p-5 sm:p-10 mt-5 rounded-xl flex flex-col lg:flex-row text-center lg:text-left min-h-[500px] shadow-md shadow-white"
         initial={{ scale: 0 }}
         whileInView={{
           rotate: 360,
@@ -31,7 +31,7 @@ export const AboutMe = ({ setFocus }) => {
         viewport={{ once: true }}
       >
         <div className="flex-1 m-auto text-center">
-          <img src="/logo192.png" className="inline-block m-auto text-center" />
+          <img src="/img-about-me.JPEG" className="inline-block m-auto text-center h-60 md:h-72 lg:h-96 rounded-lg shadow-2xl" />
         </div>
         <div className="flex-1">
           <div className="flex flex-col h-full justify-center content-center items-center">

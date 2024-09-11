@@ -32,7 +32,7 @@ export const Header = () => {
         <div className="flex lg:flex-row flex-col justify-center items-center">
           <div className="w-full lg:w-7/12 px-10">
             <motion.h1
-              className="text-3xl font-bold tracking-tight sm:text-3xl lg:text-5xl text-gray-300 text-center"
+              className="text-3xl font-bold sm:text-3xl lg:text-5xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-center "
               variants={item}
             >
               ¡Hola soy Alberto Gutierrez!
@@ -57,7 +57,7 @@ export const Header = () => {
             target="_blank"
             rel="noopener noreferrer"
             download="Alberto-Gutierrez.pdf"
-            className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="rounded-md bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 active:to-orange-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             variants={item}
           >
             Download CV
