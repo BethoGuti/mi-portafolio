@@ -41,22 +41,30 @@ export const Projects = ({ setFocus }) => {
         <Carousel
           leftControl={
             <button className="m-0 h-12 w-12 rounded-full bg-gray-400 opacity-30 ">
-              <FontAwesomeIcon icon={faChevronLeft} className="text-black font-bold" />
+              <FontAwesomeIcon
+                icon={faChevronLeft}
+                className="text-black font-bold"
+              />
             </button>
           }
           rightControl={
             <button className="m-0 h-12 w-12 rounded-full bg-gray-400 opacity-30 ">
-              <FontAwesomeIcon icon={faChevronRight} className="text-black font-bold" />
+              <FontAwesomeIcon
+                icon={faChevronRight}
+                className="text-black font-bold"
+              />
             </button>
           }
         >
           <div className="w-full h-full">
             <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 h-full px-3">
-              <img
-                className="object-contain rounded-t-lg md:rounded-none md:rounded-s-lg w-2/4 shadow-lg"
-                src="/administrador-reportes.png"
-                alt=""
-              />
+              <div className="w-full">
+                <img
+                  className="object-contain rounded-t-lg md:rounded-none md:rounded-s-lg w-full  shadow-lg"
+                  src="/administrador-reportes.png"
+                  alt="Administrador de reportes"
+                />
+              </div>
               <div className="flex flex-col justify-between p-4 leading-normal">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   Administrador de reportes
@@ -87,11 +95,13 @@ export const Projects = ({ setFocus }) => {
           </div>
           <div className="w-full h-full">
             <div className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 h-full px-3">
-              <img
-                className="object-contain rounded-t-lg md:rounded-none md:rounded-s-lg w-2/4 shadow-lg"
-                src="/biobotixlabs.png"
-                alt=""
-              />
+              <div className="w-full">
+                <img
+                  className="object-contain rounded-t-lg md:rounded-none md:rounded-s-lg w-full  shadow-lg"
+                  src="/biobotixlabs.png"
+                  alt="Administrador de reportes"
+                />
+              </div>
               <div className="flex flex-col justify-between p-4 leading-normal">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   Biobotix Labs
