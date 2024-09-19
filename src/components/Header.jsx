@@ -37,10 +37,8 @@ export const Header = () => {
             >
               ¡Hola soy Alberto Gutierrez!
             </motion.h1>
-            <motion.p className="mt-6 text-xl leading-8 text-gray-400 text-justify" variants={item}>
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
+            <motion.p className="mt-6 text-xl text-center leading-8 text-gray-400" variants={item}>
+              Web Developer
             </motion.p>
           </div>
           <div className="w-5/12">
@@ -53,7 +51,7 @@ export const Header = () => {
         </div>
         <div className="mt-10 text-center">
           <motion.a
-            href="/Alberto-Gutierrez.pdf"
+            href="/CV_ALBERTO_GUTIERREZ.pdf"
             target="_blank"
             rel="noopener noreferrer"
             download="Alberto-Gutierrez.pdf"
