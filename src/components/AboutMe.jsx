@@ -41,7 +41,7 @@ export const AboutMe = ({ setFocus }) => {
             <h2 className="text-center text-2xl sm:text-4xl font-bold mb-3">
               &lt; Sobre mí /&gt;
             </h2>
-            <p className="text-justify text-lg sm:text-2xl font-semibold">
+            <p className="text-justify text-base sm:text-xl font-semibold">
               Ingeniero en Tecnología de la Informática con una pasión
               inquebrantable por la programación, especialmente en el desarrollo
               web. Con experiencia en el desarrollo de una plataforma de gestión
