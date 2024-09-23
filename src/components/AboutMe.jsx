@@ -31,7 +31,10 @@ export const AboutMe = ({ setFocus }) => {
         viewport={{ once: true }}
       >
         <div className="flex-1 m-auto text-center">
-          <img src="/img-about-me.JPEG" className="inline-block m-auto text-center h-60 md:h-72 lg:h-96 rounded-lg shadow-2xl" />
+          <img
+            src="/img-about-me.JPEG"
+            className="inline-block m-auto text-center h-60 md:h-72 lg:h-96 rounded-lg shadow-2xl"
+          />
         </div>
         <div className="flex-1">
           <div className="flex flex-col h-full justify-center content-center items-center">
@@ -39,12 +42,17 @@ export const AboutMe = ({ setFocus }) => {
               &lt; Sobre mí /&gt;
             </h2>
             <p className="text-justify text-lg sm:text-2xl font-semibold">
-              Ingeniero en Tecnología de la Informática recientemente graduado
-              con una pasión inquebrantable por la programación, especialmente
-              en el campo del desarrollo web. Con experiencia práctica en el
-              desarrollo y diseño de sitios web, he adquirido una sólida
-              comprensión de diversas tecnologías y metodologías para la
-              creación de productos digitales de alta calidad.
+              Ingeniero en Tecnología de la Informática con una pasión
+              inquebrantable por la programación, especialmente en el desarrollo
+              web. Con experiencia en el desarrollo de una plataforma de gestión
+              de historias clínicas y seguimiento de salud en Biobotix Labs,
+              donde implementé el backend con Laravel y el frontend con React,
+              mejorando la eficiencia del flujo de trabajo médico al digitalizar
+              procesos. Anteriormente, en COBAT 21, desarrollé una aplicación
+              web para la gestión de alumnos, profesores, materias y
+              calificaciones utilizando PHP, JavaScript, HTML y CSS. Mi enfoque
+              está en crear soluciones web eficientes y de alta calidad que
+              optimicen procesos clave.
             </p>
           </div>
         </div>
